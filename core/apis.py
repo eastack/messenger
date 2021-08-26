@@ -1,5 +1,6 @@
-from core import servers
+from core.environments import server
 
 
 class HttpMethods:
-    delete = f"{servers.server()}/delete"
+    delete = f'{server()}/delete'
+    post = f'{server()}/post'
